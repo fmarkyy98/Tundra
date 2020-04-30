@@ -1,0 +1,8 @@
+4 3
+fogyik n 15
+izek l 39
+vackok n 23
+cukik u 52
+szomjasak f 12
+vukkok s 7
+szorosek h 6

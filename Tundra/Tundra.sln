@@ -8,6 +8,7 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{0010D314-1F23-4ABE-9CE4-65BF8B4377AF}"
 	ProjectSection(SolutionItems) = preProject
 		Tundra\Test\00.txt = Tundra\Test\00.txt
+		Tundra\Test\01.txt = Tundra\Test\01.txt
 	EndProjectSection
 EndProject
 Global
