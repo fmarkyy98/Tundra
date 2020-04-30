@@ -91,6 +91,7 @@ int main()
 		for (PredatorColony* item : predatorColonys)
 		{
 			item->Hunt(preyColonys);
+			cout << item->getName() << " nevû ragadozó populáció vadászni indult!" << endl;
 		}
 		if (i % 2 == 0)
 		{
@@ -110,6 +111,7 @@ int main()
 				if (typeid(*item) == typeid(GroundSquirrelColony))
 				{
 					item->Reproduce();
+					cout << item->getName() << " kolónia Szaporodott, új egyedszámuk: " << item->getNumberOfIndividuals() << endl;
 				}
 			}
 		}
@@ -118,6 +120,7 @@ int main()
 			for (PredatorColony* item : predatorColonys)
 			{
 				item->Reproduce();
+				cout << item->getName() << " kolónia Szaporodott, új egyedszámuk: " << item->getNumberOfIndividuals() << endl;
 			}
 		}
 	}
