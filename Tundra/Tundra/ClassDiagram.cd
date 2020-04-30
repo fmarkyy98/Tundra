@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
+  <Class Name="Colony">
+    <Position X="7.75" Y="0.5" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAIAAAACAAEACAAAAACAAAAAAAAAAAAAAEAAAACAA=</HashCode>
+      <FileName>Colony.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PredatorColony">
+    <Position X="3.25" Y="4" Width="3.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAgAA=</HashCode>
+      <FileName>PredatorColony.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SnowyOwlColony">
+    <Position X="5.5" Y="6.5" Width="3.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAEAAAAAAAAAAABAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>PredatorColony.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PolarFoxColony">
+    <Position X="1" Y="6.5" Width="3.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAACAAAAAAAAAA=</HashCode>
+      <FileName>PredatorColony.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WolfColony">
+    <Position X="3.25" Y="8.25" Width="3.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAIAAAA=</HashCode>
+      <FileName>PredatorColony.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PreyColony">
+    <Position X="12.25" Y="4" Width="3.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAUAAgAAAAAAAAAAAAAAAAAAAAAAEAAAA=</HashCode>
+      <FileName>PreyColony.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LemmingColony">
+    <Position X="9.75" Y="6.5" Width="3.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAACAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAACAA=</HashCode>
+      <FileName>PreyColony.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PolarRabbitColony">
+    <Position X="12" Y="8.5" Width="4" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAABAAEAAAAAAAAAAAAAAAAAAAAAAAAAAACAA=</HashCode>
+      <FileName>PreyColony.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GroundSquirrelColony">
+    <Position X="14.25" Y="6.5" Width="4" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAACAA=</HashCode>
+      <FileName>PreyColony.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
