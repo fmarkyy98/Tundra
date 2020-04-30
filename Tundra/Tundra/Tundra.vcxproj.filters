@@ -15,8 +15,28 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Tundra.cpp">
+    <ClCompile Include="PreyColony.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="PredatorColony.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Colony.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="PreyColony.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PredatorColony.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Colony.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

@@ -147,7 +147,15 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Tundra.cpp" />
+    <ClCompile Include="Colony.cpp" />
+    <ClCompile Include="PredatorColony.cpp" />
+    <ClCompile Include="PreyColony.cpp" />
+    <ClCompile Include="main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Colony.h" />
+    <ClInclude Include="PredatorColony.h" />
+    <ClInclude Include="PreyColony.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
