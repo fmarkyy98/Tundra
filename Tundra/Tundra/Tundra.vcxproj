@@ -147,9 +147,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Colony.cpp" />
     <ClCompile Include="PredatorColony.cpp" />
-    <ClCompile Include="PreyColony.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
