@@ -1,6 +1,7 @@
 #pragma once
 #include <vector>
 #include <ctime>
+#include <iostream>
 #include "Colony.h"
 #include "PreyColony.h"
 
@@ -22,7 +23,12 @@ public:
 		if (hunted->getNumberOfIndividuals() < hunted->DieingRate(this->_numberOfIndividuals)) // Dieing rate returns an integer that represents the amount of dead members after an atack.
 		{
 			hunted->setNumberOfIndividuals(0);
+			std::cout << hunted->getName() << " Kipusztult!!!" << std::endl;
 			(this->_numberOfIndividuals *= 3) /= 4;
+			if (this->_numberOfIndividuals < 2)
+			{
+				std::cout << this->_name << "Éhanhalt :'(" << std::endl;
+			}
 		}
 		else
 		{

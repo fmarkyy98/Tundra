@@ -35,6 +35,7 @@ int main()
 	fs.open(filename);
 	int preys, predators;
 	fs >> preys >> predators;
+	cout << preys << " " << predators << endl;
 
 	vector<PreyColony*> preyColonys;
 	vector<PredatorColony*> predatorColonys;
@@ -46,6 +47,7 @@ int main()
 		int population;
 		PreyColony* tmp;
 		fs >> name >> c >> population;
+		cout << name << " " << c << " " << population << endl;
 		switch (c)
 		{
 		case 'l':
@@ -70,6 +72,7 @@ int main()
 		int population;
 		PredatorColony* tmp;
 		fs >> name >> c >> population;
+		cout << name << " " << c << " " << population << endl;
 		BasePredatorPopulation += population;
 		switch (c)
 		{
@@ -88,10 +91,14 @@ int main()
 
 	for (unsigned long long i = 1; 0 < GetPreyPopulation(preyColonys) && GetPredatorPopulation(predatorColonys) < BasePredatorPopulation * 4; ++i)
 	{
+		cout << "\n-------------------Day " << i << "----------------------" << endl << endl;
 		for (PredatorColony* item : predatorColonys)
 		{
-			item->Hunt(preyColonys);
-			cout << item->getName() << " nevû ragadozó populáció vadászni indult!" << endl;
+			if (1 < item->getNumberOfIndividuals());
+			{
+				cout << item->getName() << " nevû ragadozó populáció vadászni indult!" << endl;
+				item->Hunt(preyColonys);
+			}
 		}
 		if (i % 2 == 0)
 		{
@@ -99,8 +106,12 @@ int main()
 			{
 				if (typeid(*item) == typeid(LemmingColony) || typeid(*item) == typeid(PolarRabbitColony))
 				{
-					item->Reproduce();
-					cout << item->getName() << " kolónia Szaporodott, új egyedszámuk: " << item->getNumberOfIndividuals() << endl;
+					int wtf = item->getNumberOfIndividuals();
+					if (1 < wtf)
+					{
+						item->Reproduce();
+						cout << item->getName() << " kolónia Szaporodott, új egyedszámuk: " << item->getNumberOfIndividuals() << endl;
+					}
 				}
 			}
 		}
@@ -110,8 +121,11 @@ int main()
 			{
 				if (typeid(*item) == typeid(GroundSquirrelColony))
 				{
-					item->Reproduce();
-					cout << item->getName() << " kolónia Szaporodott, új egyedszámuk: " << item->getNumberOfIndividuals() << endl;
+					if (1 < item->getNumberOfIndividuals());
+					{
+						item->Reproduce();
+						cout << item->getName() << " kolónia Szaporodott, új egyedszámuk: " << item->getNumberOfIndividuals() << endl;
+					}
 				}
 			}
 		}
@@ -119,8 +133,11 @@ int main()
 		{
 			for (PredatorColony* item : predatorColonys)
 			{
-				item->Reproduce();
-				cout << item->getName() << " kolónia Szaporodott, új egyedszámuk: " << item->getNumberOfIndividuals() << endl;
+				if (1 < item->getNumberOfIndividuals());
+				{
+					item->Reproduce();
+					cout << item->getName() << " kolónia Szaporodott, új egyedszámuk: " << item->getNumberOfIndividuals() << endl;
+				}
 			}
 		}
 	}
